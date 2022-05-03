@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YuanXiao's WebSite</title>
+</head>
+<body>
+<div>
+
+</div>
+    <div>
+    <h1><img src="https://th.bing.com/th/id/OIP.eUSMxgnZQjlqs6KPnmkbKgHaE8?w=274&h=183&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="U of T" width="200" height="130" align="middle"/>
+    Welcome to YuanXiao's WebSite</h1>
+    </div>
+    <div>
+
+    </div>
+    <div>
+    <h2> Here are some useful links: </h2>
+    <p><abbr title="Redirecting To Quercus"><a href="https://toolboxrenewal.utoronto.ca/">Quercus</a></abbr></p>
+    <p><abbr title="Redirecting To Acorn"><a href="https://acorn.utoronto.ca/">Acorn</a></abbr></p>
+    </div>
+    <div>
+        <form action="#" method="get">
+            <h2> Here is a simple Navigation Bar: </h2>
+            <p> Search: <input type="text" name="searchBar" size="100" maxlength="200"/> </p>
+            <input type="submit" id="btn" name="searchButton" value="Search">
+        </form>
+    </div>
+    <div>
+        <h2>Current Time:</h2>
+        <p id="demo"> </p>
+        <input type="button" id="Time" name="timeButton" value="UpdateTime">
+    </div>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        document.getElementById("demo").innerHTML = Date();
+        document.getElementById("Time").addEventListener("click", displayDate);
+    </script>
+
+</body>
+</html>
